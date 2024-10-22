@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Guia de Ajuda - Spotify</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background-color: #1DB954;
+        }
+        .navbar-brand img {
+            width: 120px;
+        }
+        .main-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 30px;
+            background-color: #282828;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card {
+            background-color: #3a3a3a;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .btn-link {
+            color: #1DB954;
+            font-weight: bold;
+        }
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/spotify.svg" alt="Spotify Logo">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="premium.html" class="nav-link">Premium</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="ajuda.html" class="nav-link">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="baixar.html" class="nav-link">Baixar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="inscrever.html" class="nav-link">Inscrever-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="entrar.html" class="nav-link">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h1 class="text-center my-4">Guia de Ajuda do Spotify</h1>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Como faço para criar uma conta?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Para criar uma conta, visite o site do Spotify e clique em "Inscrever-se". Siga as instruções e preencha os dados necessários.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Como posso cancelar minha assinatura?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Para cancelar sua assinatura, acesse a seção de conta no Spotify, clique em "Gerenciar minha assinatura" e siga as instruções para cancelar.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Posso usar o Spotify offline?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sim, os usuários do Spotify Premium podem baixar músicas e playlists para ouvir offline. Basta ativar a opção de download nas configurações.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Como posso entrar em contato com o suporte?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Você pode entrar em contato com o suporte do Spotify através da seção de ajuda no site ou pelo aplicativo, onde encontrará opções de contato.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2024 Spotify. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
